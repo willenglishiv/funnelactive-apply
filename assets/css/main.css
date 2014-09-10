@@ -2176,15 +2176,15 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 50px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
+  border: 3px solid #a9bed6;
+  border-radius: none;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
@@ -2224,7 +2224,7 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
-  line-height: 34px;
+  line-height: 50px;
   line-height: 1.42857143 \0;
 }
 input[type="date"].input-sm,
@@ -2349,7 +2349,7 @@ select[multiple].input-lg {
   position: relative;
 }
 .has-feedback .form-control {
-  padding-right: 42.5px;
+  padding-right: 62.5px;
 }
 .form-control-feedback {
   position: absolute;
@@ -2357,9 +2357,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
 }
 .input-lg + .form-control-feedback {
@@ -3330,7 +3330,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #555555;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #cccccc;
+  border: 1px solid #a9bed6;
   border-radius: 4px;
 }
 .input-group-addon.input-sm {
@@ -3808,8 +3808,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -3888,8 +3888,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .navbar-btn.btn-sm {
   margin-top: 10px;
@@ -6046,15 +6046,15 @@ button.close {
 .ginput_container textarea {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 50px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
+  border: 3px solid #a9bed6;
+  border-radius: none;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
@@ -6269,6 +6269,39 @@ fieldset[disabled] .gform_button.active {
 #gforms_confirmation_message .alert-link {
   color: #2b542c;
 }
+.ginput_complex .ginput_full {
+  width: 95% !important;
+}
+.ginput_complex .ginput_left input {
+  width: 95% !important;
+}
+.ginput_complex .ginput_left label {
+  width: 95% !important;
+}
+.ginput_complex .ginput_right input {
+  width: 95% !important;
+}
+.ginput_complex .ginput_right label {
+  width: 95% !important;
+}
+.ginput_complex .ginput_full input {
+  width: 95% !important;
+}
+.ginput_complex .ginput_full label {
+  width: 95% !important;
+}
+.ginput_complex .ginput_left {
+  width: 50%;
+  float: left;
+}
+.ginput_complex .ginput_right {
+  width: 50%;
+  float: left;
+}
+.gform_validation_container {
+  display: none !important;
+  visibility: hidden !important;
+}
 .gallery-row {
   padding: 10px 0;
 }
@@ -6373,6 +6406,7 @@ h2 {
 .form_wrapper {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 20px;
   border: 1px solid #d6d6d6;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
